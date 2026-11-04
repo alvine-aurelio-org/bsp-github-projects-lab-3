@@ -1,0 +1,13 @@
+{
+  "name": "bsp-github-projects-lab-3",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline author checks for the Lab 3 companion reference; learners continue in their existing Lab 1 copy.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test --test-reporter=tap",
+    "verify": "node tools/verify-content.mjs"
+  }
+}

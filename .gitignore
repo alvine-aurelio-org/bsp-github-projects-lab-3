@@ -1,0 +1,16 @@
+node_modules/
+.artifacts/
+coverage/
+.env
+.env.*
+*.log
+*.tsv
+*.csv
+*.pem
+*.key
+*.pfx
+*.p12
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,29 @@
+name: Companion verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Companion content
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out companion
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Use Node 24
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+      - name: Verify published content
+        run: node tools/verify-content.mjs
+      - name: Run content contract tests
+        run: node --test --test-reporter=tap

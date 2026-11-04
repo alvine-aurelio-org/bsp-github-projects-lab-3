@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "4a20c763a48bd4f5a34a84c002fd9858e9793f65",
+  "license": "CC-BY-4.0",
+  "originals": {
+    "view": {
+      "path": "originals/projects-v2--new-view.png",
+      "sourcePath": "projects-v2/new-view.png",
+      "sourceUrl": "https://raw.githubusercontent.com/github/docs/4a20c763a48bd4f5a34a84c002fd9858e9793f65/assets/images/help/projects-v2/new-view.png",
+      "sha256": "cc2df76c2d3b4c29ea13c3d4e6ff7b74b2fb978f7c46674df5503218e177de23",
+      "width": 678,
+      "height": 110,
+      "caption": "New view → select the layout; save your changes"
+    },
+    "roadmap": {
+      "path": "originals/projects-v2--roadmap-menu-dates.png",
+      "sourcePath": "projects-v2/roadmap-menu-dates.png",
+      "sourceUrl": "https://raw.githubusercontent.com/github/docs/4a20c763a48bd4f5a34a84c002fd9858e9793f65/assets/images/help/projects-v2/roadmap-menu-dates.png",
+      "sha256": "8dd6eaf47eda32a5158453f224ca5fe391bb8c465e000af85885b01ec083738f",
+      "width": 670,
+      "height": 84,
+      "caption": "Roadmap → Date fields → map Start date and Target date"
+    },
+    "table": {
+      "path": "originals/projects--priority-example.png",
+      "sourcePath": "projects/priority-example.png",
+      "sourceUrl": "https://raw.githubusercontent.com/github/docs/4a20c763a48bd4f5a34a84c002fd9858e9793f65/assets/images/help/projects/priority-example.png",
+      "sha256": "b4fab5d974f22731e75847973a636eaa4fa5fef1cfbdd27170f65334e5f06e6c",
+      "width": 1914,
+      "height": 654,
+      "caption": "A real table: edit fields here; use the exercise values"
+    },
+    "insights": {
+      "path": "originals/projects-v2--insights-button.png",
+      "sourcePath": "projects-v2/insights-button.png",
+      "sourceUrl": "https://raw.githubusercontent.com/github/docs/4a20c763a48bd4f5a34a84c002fd9858e9793f65/assets/images/help/projects-v2/insights-button.png",
+      "sha256": "63d94cc4689a3d92fa8dfa0c7755c6c6899ddeaf6ff2e1445484c382a3309720",
+      "width": 238,
+      "height": 96,
+      "caption": "Project top-right graph icon → Insights"
+    },
+    "chart": {
+      "path": "originals/issues--column-chart-example.png",
+      "sourcePath": "issues/column-chart-example.png",
+      "sourceUrl": "https://raw.githubusercontent.com/github/docs/4a20c763a48bd4f5a34a84c002fd9858e9793f65/assets/images/help/issues/column-chart-example.png",
+      "sha256": "57061f6a3b255799e1aa9901fe7eb7d3c23eb0877ce3d1f38187cb346cc7be9c",
+      "width": 2050,
+      "height": 1102,
+      "caption": "Example OUTPUT only; configure YOUR chart by Status"
+    },
+    "details": {
+      "path": "originals/projects-v2--insights-button.png",
+      "sourcePath": "projects-v2/insights-button.png",
+      "sourceUrl": "https://raw.githubusercontent.com/github/docs/4a20c763a48bd4f5a34a84c002fd9858e9793f65/assets/images/help/projects-v2/insights-button.png",
+      "sha256": "63d94cc4689a3d92fa8dfa0c7755c6c6899ddeaf6ff2e1445484c382a3309720",
+      "width": 238,
+      "height": 96,
+      "caption": "Project details: use the side-panel icon RIGHT of the highlighted graph"
+    }
+  },
+  "sheets": [
+    {
+      "id": "3-1",
+      "path": "lab-3-step-1.png",
+      "title": "Create a release roadmap",
+      "panels": [
+        "view",
+        "roadmap"
+      ],
+      "sha256": "c233e0b51f3f0567562aae138f26934ff60f48906d6b4ac6918c57f35b6e546d",
+      "width": 1440,
+      "height": 620
+    },
+    {
+      "id": "3-2",
+      "path": "lab-3-step-2.png",
+      "title": "Inspect workload",
+      "panels": [
+        "view",
+        "table"
+      ],
+      "sha256": "b50f9de90c1f717c753c8036924e62a2d7aee8c40092acb9f68749913de30dfa",
+      "width": 1440,
+      "height": 688
+    },
+    {
+      "id": "3-3",
+      "path": "lab-3-step-3.png",
+      "title": "Read a progress chart",
+      "panels": [
+        "insights",
+        "chart"
+      ],
+      "sha256": "f245eb90bf4f9fc0b4e74f27ac5ea6153d70ca9fccb25f2be5e3649704b54b63",
+      "width": 1440,
+      "height": 815
+    },
+    {
+      "id": "3-4",
+      "path": "lab-3-step-4.png",
+      "title": "Publish a delivery update",
+      "panels": [
+        "details",
+        "view"
+      ],
+      "sha256": "8f0628794526d3372f4437e866d845e5b0e5f156d707b5c5cdc8be7a240be47d",
+      "width": 1440,
+      "height": 620
+    }
+  ]
+}
