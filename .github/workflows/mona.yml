@@ -1,0 +1,19 @@
+name: Mona — guided laboratory
+
+on:
+  push:
+    branches: [main]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+jobs:
+  guide:
+    uses: alvine-aurelio-org/bsp-github-projects-lab-1/.github/workflows/module-runner.yml@a76f1fc0b396a04d7ac4ed2c85a412705f839233
+    with:
+      runtime-ref: a76f1fc0b396a04d7ac4ed2c85a412705f839233

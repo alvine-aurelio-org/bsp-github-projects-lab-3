@@ -1,8 +1,69 @@
 {
-  "schemaVersion": 1,
-  "role": "companion",
+  "schemaVersion": 3,
+  "role": "standalone",
   "lab": 3,
   "title": "Visualize and communicate",
-  "minutes": 35,
-  "starterRepository": "alvine-aurelio-org/bsp-github-projects-lab-1"
+  "minutes": 45,
+  "continuationMinutes": 35,
+  "bootstrapIssueLimit": 1,
+  "starterRepository": "alvine-aurelio-org/bsp-github-projects-lab-1",
+  "sourceRepositories": [
+    "alvine-aurelio-org/bsp-github-projects-lab-1",
+    "alvine-aurelio-org/bsp-github-projects-lab-2",
+    "alvine-aurelio-org/bsp-github-projects-lab-3"
+  ],
+  "defaultBranch": "main",
+  "exerciseTitle": "Mona's GitHub Projects Lab 3 — start here",
+  "publicAssetBase": "https://raw.githubusercontent.com/alvine-aurelio-org/bsp-github-projects-lab-3/main/assets/screenshots/",
+  "workBranch": "workshop/release-checklist",
+  "workFile": "work/release-checklist.md",
+  "requiredWorkText": "- [x] Publish the service release checklist",
+  "workItems": [
+    {
+      "key": "implementation",
+      "title": "[Workshop] Publish the service release checklist"
+    },
+    {
+      "key": "verification",
+      "title": "[Workshop] Verify the release checklist in Sprint 2"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "3-1",
+      "step": 1,
+      "minutes": 20,
+      "title": "Set up your release roadmap",
+      "mode": "mixed",
+      "command": "YOUR_PROJECT_URL",
+      "image": "lab-3-step-1.png"
+    },
+    {
+      "id": "3-2",
+      "step": 2,
+      "minutes": 8,
+      "title": "Inspect workload",
+      "mode": "self-confirmed",
+      "command": "/done 3-2",
+      "image": "lab-3-step-2.png"
+    },
+    {
+      "id": "3-3",
+      "step": 3,
+      "minutes": 7,
+      "title": "Read a progress chart",
+      "mode": "self-confirmed",
+      "command": "/done 3-3",
+      "image": "lab-3-step-3.png"
+    },
+    {
+      "id": "3-4",
+      "step": 4,
+      "minutes": 10,
+      "title": "Publish a delivery update",
+      "mode": "self-confirmed",
+      "command": "/done 3-4",
+      "image": "lab-3-step-4.png"
+    }
+  ]
 }
