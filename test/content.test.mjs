@@ -53,6 +53,7 @@ unit('manual-run roadmap and workload guidance uses actual dates and native issu
   for (const text of [
     "that organization's Projects tab",
     'separate browser tabs',
+    'Add issue fields \u2192 Create a project field',
     'Create a project field',
     'Starts on',
     'seven days',
@@ -71,8 +72,9 @@ unit('export requires confirmation and a completed download before the final com
   const update = stepSections(guide)[3].text.replace(/[*`]/g, '');
   for (const text of [
     'all rows are loaded',
+    'count the loaded Backlog rows',
     'Save any view changes',
-    "confirmation dialog's row count",
+    'Do not expect a numeric row count in the export dialog',
     'select Export in that dialog',
     'Opening the dialog alone does not download the TSV',
     'completed TSV download',
@@ -81,6 +83,11 @@ unit('export requires confirmation and a completed download before the final com
     'Do not commit, upload or attach the export',
   ])
     assert.ok(update.includes(text), `Missing export stop condition: ${text}`);
+  assert.ok(
+    update.indexOf('count the loaded Backlog rows') < update.indexOf('Export view data'),
+    'Count loaded rows before opening the export dialog',
+  );
+  assert.doesNotMatch(guide, /check (?:the confirmation dialog's row count|that count in the export confirmation)/i);
 });
 
 // Select only "^unit: " while the parent is finalizing the immutable runtime pin.
