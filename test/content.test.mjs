@@ -47,6 +47,42 @@ const pinnedMona = pinWorkflow(
   'a'.repeat(40),
 );
 
+unit('manual-run roadmap and workload guidance uses actual dates and native issue state', () => {
+  const steps = stepSections(guide);
+  const setup = steps[0].text.replace(/[*`]/g, '');
+  for (const text of [
+    "that organization's Projects tab",
+    'separate browser tabs',
+    'Create a project field',
+    'Starts on',
+    'seven days',
+    'Item set to Done',
+    'manual demo data, not evidence of a PR merge',
+    'Dates: Start date and Target date',
+    'Clear inherited filters',
+  ])
+    assert.ok(setup.includes(text), `Missing roadmap guidance: ${text}`);
+  const workload = steps[1].text.replace(/[*`]/g, '');
+  for (const text of ['native issue state, not Project Status', 'multi-select', 'clear Count'])
+    assert.ok(workload.includes(text), `Missing workload guidance: ${text}`);
+});
+
+unit('export requires confirmation and a completed download before the final command', () => {
+  const update = stepSections(guide)[3].text.replace(/[*`]/g, '');
+  for (const text of [
+    'all rows are loaded',
+    'Save any view changes',
+    "confirmation dialog's row count",
+    'select Export in that dialog',
+    'Opening the dialog alone does not download the TSV',
+    'completed TSV download',
+    'pending, blocked or cancelled',
+    'do not submit /done 3-4',
+    'Do not commit, upload or attach the export',
+  ])
+    assert.ok(update.includes(text), `Missing export stop condition: ${text}`);
+});
+
 // Select only "^unit: " while the parent is finalizing the immutable runtime pin.
 // This integration test must fail closed in publication CI until that pin is real.
 test('integration: complete standalone publication satisfies the offline contract', () => {
@@ -1002,7 +1038,7 @@ unit(
       'Verification remains open for Sprint 2',
     ]) {
       assert.ok(
-        guideErrors(changeStep(4, (text) => text.replace(literal, 'omitted')))
+        guideErrors(changeStep(4, (text) => text.replaceAll(literal, 'omitted')))
           .length > 0,
         literal,
       );

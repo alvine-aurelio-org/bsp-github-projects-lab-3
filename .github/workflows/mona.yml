@@ -14,6 +14,6 @@ permissions:
 
 jobs:
   guide:
-    uses: alvine-aurelio-org/bsp-github-projects-lab-1/.github/workflows/module-runner.yml@a76f1fc0b396a04d7ac4ed2c85a412705f839233
+    uses: alvine-aurelio-org/bsp-github-projects-lab-1/.github/workflows/module-runner.yml@e145f1b46f17a1f481806e1464fa38d5bcd45d33
     with:
-      runtime-ref: a76f1fc0b396a04d7ac4ed2c85a412705f839233
+      runtime-ref: e145f1b46f17a1f481806e1464fa38d5bcd45d33
